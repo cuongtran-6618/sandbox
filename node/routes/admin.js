@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 
 const router = (require = express.Router());
@@ -13,13 +14,7 @@ router.post("/user", (req, res, next) => {
 });
 
 router.get("/add-user", (req, res, next) => {
-	res.send(`
-        This is the user page
-       <form action="/admin/user" method="POST">
-        <input type="text" name="username" />
-        <button type="submit">Create</button>
-       </form>
-    `);
+	res.sendFile(path.join(__dirname, "../", "views", "add-user.html"));
 });
 
 module.exports = router;
