@@ -1,0 +1,17 @@
+header {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+header ul {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	background-color: cornflowerblue;
+	margin: 0;
+	padding: 5px;
+	list-style: none;
+}

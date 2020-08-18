@@ -4,19 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="/css/header.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul>
 					<li><a href="/">homepage</a></li>
-					<li><a href="/user">Users</a></li>
-					<li><a href="/add-user">Add Users</a></li>
+					<li><a href="/admin/user">Users</a></li>
+					<li><a href="/admin/add-user">Add Users</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<form action="/add-user" method="post">
+			<form action="/admin/user" method="post">
 				<input type="text" name="username" id="" />
 				<button type="submit">Add user</button>
 			</form>
